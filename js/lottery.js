@@ -156,7 +156,7 @@ Lottery.prototype = {
 		var param = {};
 		param.token = self.token;
 		param.cellphone = cellphone;
-		$.post(url, param, function( data ){
+		$.get(url, param, function( data ){
 			if( typeof data === 'string'){
 				data = eval('(' + data +')');
 			}
